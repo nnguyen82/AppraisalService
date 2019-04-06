@@ -1,5 +1,5 @@
 <nav class="navbar bg-primary">
-  <a class="navbar-brand">Appraisal Services</a>
+  <a class="navbar-brand"><b style="font-size:larger; color:floralwhite">Appraisal Services</b></a>
   <form class="form-inline col-sm-8">
     <input class="form-control col-sm-6" type="search" placeholder="Search" aria-label="Search">
     &nbsp;<button class="btn btn-outline-success" type="submit">Search</button>
@@ -12,5 +12,15 @@
 </nav>
 
 <p-sidebar [(visible)]="display" position="right">
-  Content
+  <div>
+    <button class="btn bg-primary navbar-btn menuButton"><i class="pi pi-chart-bar"></i>  Dash board</button>
+  </div>
+  <br />
+  <div><button class="btn bg-primary navbar-btn menuButton"><i class="pi pi-folder"></i> Task</button></div>
+  <br />
+  <div><button class="btn bg-primary navbar-btn menuButton"><i class="pi pi-user"></i> Vendor</button></div>
+  <br />
+  <div><button class="btn bg-primary navbar-btn menuButton"><i class="pi pi-user"></i> CRM</button></div>
+  <br />
+  <div><button class="btn bg-primary navbar-btn menuButton"><i class="pi pi-briefcase"></i> Accountant</button></div>
 </p-sidebar>
