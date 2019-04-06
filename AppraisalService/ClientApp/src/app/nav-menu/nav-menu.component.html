@@ -1,0 +1,16 @@
+<nav class="navbar bg-primary">
+  <a class="navbar-brand">Appraisal Services</a>
+  <form class="form-inline col-sm-8">
+    <input class="form-control col-sm-6" type="search" placeholder="Search" aria-label="Search">
+    &nbsp;<button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+  <nav class="navbar navbar-dark" (click)="display = true" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</nav>
+
+<p-sidebar [(visible)]="display" position="right">
+  Content
+</p-sidebar>
