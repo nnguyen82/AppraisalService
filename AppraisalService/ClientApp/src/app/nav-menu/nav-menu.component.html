@@ -1,5 +1,5 @@
 <nav class="navbar bg-primary">
-  <a class="navbar-brand"><b style="font-size:larger; color:floralwhite">Appraisal Services</b></a>
+  <a class="navbar-brand"><b style="font-size:larger; color:floralwhite" [routerLink]='["/"]'>Appraisal Services</b></a>
   <form class="form-inline col-sm-8">
     <input class="form-control col-sm-6" type="search" placeholder="Search" aria-label="Search">
     &nbsp;<button class="btn btn-outline-success" type="submit">Search</button>
@@ -12,11 +12,11 @@
 </nav>
 
 <p-sidebar [(visible)]="display" position="right">
-  <div>
-    <button class="btn bg-primary navbar-btn menuButton"><i class="pi pi-chart-bar"></i>  Dash board</button>
-  </div>
+  <div><button class="btn bg-primary navbar-btn menuButton" [routerLink]='["/"]'><i class="pi pi-chart-bar"></i>  Dash board</button></div>
   <br />
-  <div><button class="btn bg-primary navbar-btn menuButton"><i class="pi pi-folder"></i> Task</button></div>
+  <div><button class="btn bg-primary navbar-btn menuButton" [routerLink]='["/workorder"]'><i class="pi pi-folder"></i> Work Order</button></div>
+  <br />
+  <div><button class="btn bg-primary navbar-btn menuButton" [routerLink]='["/task"]'><i class="pi pi-folder"></i> Task</button></div>
   <br />
   <div><button class="btn bg-primary navbar-btn menuButton"><i class="pi pi-user"></i> Vendor</button></div>
   <br />
