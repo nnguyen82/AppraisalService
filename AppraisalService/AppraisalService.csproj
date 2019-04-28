@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -10,6 +10,7 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,25 +26,30 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\app-routing.module.ts" />
     <None Remove="ClientApp\src\app\dash-board\dash-board.component.ts" />
     <None Remove="ClientApp\src\app\nav-menu\nav-menu.component.ts" />
     <None Remove="ClientApp\src\app\primeng.module.ts" />
+    <None Remove="ClientApp\src\app\statistic\statistic.component.ts" />
     <None Remove="ClientApp\src\app\task\task.component.ts" />
+    <None Remove="ClientApp\src\app\vendor\vendor.component.ts" />
     <None Remove="ClientApp\src\app\workorder\workorder.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\dash-board\dash-board.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\nav-menu\nav-menu.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\primeng.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\statistic\statistic.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\task\task.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\vendor\vendor.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\workorder\workorder.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\crm\" />
     <Folder Include="ClientApp\src\app\accountant\" />
-    <Folder Include="ClientApp\src\app\vendor\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

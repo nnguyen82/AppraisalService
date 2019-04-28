@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+.ui-panel-titlebar {
+  background: transparent;
+  background-color: #f4f4f4 !important;
+  color: #3071a9 !important;
+  font-weight: bold;
+  font-size: larger;
+}
+
+body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
+  position: static;
+  border: 1px solid #c8c8c8;
+  background: transparent;
+  background-color: #3071a9 !important;
+  margin-right: 2px;
+  margin-bottom: -1px;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.ui-menu {
+  width: auto !important;
+  margin: 0px !important;
+  border: none !important;
+  background-color: #3071a9 !important;
+}
+
+.menuBackGround {
+  margin: 0px !important;
+  border: none !important;
+  background: transparent;
+  background-color: #3071a9 !important;
+}
+
+.ui-menuitem-text {
+  color: white !important;
+}
+
+.ui-menuitem-icon {
+  color: white !important;
+  font-size: large !important;
+  margin-right: 1em;
+}
+
+body .ui-menu .ui-menuitem :hover {
+  background-color: #2F8EE5 !important;
+}
+
+.menu-selected {
+  background-color: #2F8EE5 !important;
+}
+
+.routeOutletPadding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+body {
+  background-color: #D9E0E7 !important;
+  margin: 0px;
+  font-size: large;
+}
+
+.tabTitlePanel {
+  padding-top: 50px;
+}
